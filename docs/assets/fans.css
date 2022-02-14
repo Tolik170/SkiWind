@@ -70,7 +70,7 @@
 .posts__item {
     border-radius: 5%;
     text-align: center;
-    background-color: rgb(229, 222, 255); /*#FAFAFA  rgb(229, 222, 255)*/
+    background-color: #d7d7f3; 
     height: 100%;
 }
 .item-posts {

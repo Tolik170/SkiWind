@@ -5,6 +5,9 @@
     margin: 0;
     box-sizing: border-box;
 }
+:root {
+    scroll-behavior: smooth;
+}
 ::selection{
     background: #81ecec;
   }
@@ -325,7 +328,7 @@ nav a {
     font-size: 20px;
     line-height: calc(30 / 20 * 100%); 
     letter-spacing: 0.2px;
-    color: #737373;
+    color: #3a3a3a;
     width: 376px;
  }
  @media(max-width: 400px) {
@@ -353,7 +356,7 @@ nav a {
     
  }
  .learnMore_btn {
-    background: #FF7B47;
+    background: #ca4444; /*FF7B47*/
     display: flex;    
     padding: 0px 25px;
     box-sizing: border-box;

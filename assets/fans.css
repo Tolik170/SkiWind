@@ -1,0 +1,199 @@
+
+@keyframes slideFromBottom {
+  0% {
+    transform: translateY(100%)
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideFromTop {
+  0% {
+    transform: translateY(-100%)
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.main {
+    margin-top: 70px;
+
+}
+.main__posts {
+ background-color: #FAFAFA;
+ 
+}
+.header-block {
+    margin: 50px 0px 20px 0px;
+    animation: slideFromTop 1s ease-in;
+}
+.header-block__title {
+    font-size: 28px;
+}
+.posts__main__body {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -20px;
+}
+.posts__postContent {
+  animation: slideFromBottom 1s ease-in;
+
+}
+
+.posts__postContent:not(:last-child) {
+    margin-bottom: 50px;
+}
+.posts__container {
+    padding: 0px 15px 50px 15px;
+}
+
+.item-posts__text {
+    font-size: 16px;
+    line-height: 140%;
+    letter-spacing: 0.1px;
+    color: #000;
+    text-align: left;
+}
+
+@media(max-width: 1016px) {
+    .item-posts__text {
+        text-align: center;
+    }
+}
+@media(max-width: 646px) {
+    .posts__column {
+        flex: 0 1 100%;
+    }
+}
+.posts__item {
+    border-radius: 5%;
+    text-align: center;
+    background-color: rgb(229, 222, 255); /*#FAFAFA  rgb(229, 222, 255)*/
+    height: 100%;
+}
+.item-posts {
+    display: flex;
+    flex-direction: column;
+}
+
+.item-posts__content {
+    padding: 30px 30px 30px 25px;
+}
+.item-posts__bottom {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    color: #737373;
+}
+.item-posts__bottom__left {
+    line-height: 20px;
+}
+.item-posts__author {
+    font-weight: bold;
+    font-size: 17px;
+    display: flex;
+}
+.author-block img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin: -5px 0px 0px 5px;
+}
+
+
+  .main__addPost {
+      background: #FAFAFA;
+  }
+  .addPost__body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .addPost__body .addPost__box .image{
+    width: 300px;
+    height: 100px;
+  }
+  .addPost__body .addPost__box .image img{
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #17213C;
+  }
+  .addPost__box{
+    position: relative;
+    width: 480px;
+    height: 120px;
+    background: #fff;
+    border-radius: 5px;
+    border: 2px solid #17213C;
+  }
+   .image{
+    margin-top: 20px;
+    padding-left: 45px;
+  }
+   .box__content{
+    position: absolute;
+    top: 25%;
+    padding-left: 105px;
+  }
+   .box__content textarea{
+    width: 250px;
+    height: 33px;
+    padding: 8px 20px;
+    outline: none;
+    border: 3px solid #ddd;
+    border-radius: 20px;
+    resize: none;
+    margin-bottom: 10px;
+    transition: all 0.5s ease;
+  }
+   .box__content textarea:focus{
+    position: absolute;
+    width: 500px;
+    height: 200px;
+    bottom: -200%;
+    right: -40%;
+    padding-top: 20px;
+    font-size: 16px;
+  }
+   .box__content textarea:focus ~ button{
+    bottom: 55px;
+    left: 320px;
+  }
+   .box__content i{
+    padding-right: 5px;
+  }
+   .box__content span{
+    padding: 5px 8px;
+    cursor: pointer;
+    margin-bottom: 120px;
+    transition: all 0.2s ease;
+  }
+   .box__content span:hover{
+    background: #ddd;
+    border-radius: 8px;
+  }
+   .box__content button{
+    position: relative;
+    bottom: 23px;
+    width: 60px;
+    height: 28px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    background: #3498db;
+    color: #fff;
+    border-radius: 8px;
+  }
+   .box__content button:hover{
+    background: #1f71a8;
+  }
+   .box__content textarea:focus ~ button{
+    background: #73a3c4;
+    opacity: 0.8;
+  }
+
+ 

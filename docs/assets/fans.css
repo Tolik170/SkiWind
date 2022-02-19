@@ -38,6 +38,7 @@
     margin: 0 -20px;
 }
 .posts__postContent {
+  width: 100%;
   animation: slideFromBottom 1s ease-in;
 
 }

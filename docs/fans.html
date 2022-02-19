@@ -70,7 +70,7 @@
                                         <div class="item-posts__bottom">
                                             <div class="item-posts__bottom__left">
                                                 <div class="item-posts__date">11.02.2022, 12:20</div>
-                                                <div class="item-posts__date">add comment...</div>
+                                                <div class="item-posts__comment">add comment...</div>
                                             </div>
                                             <div class="item-post__bottom__right">
                                                 <a href="#">
@@ -128,10 +128,10 @@
                                 <img src="assets/ava1.jpg" alt="">
                             </div>
                             <div class="box__content">
-                                <form action="" method="POST">
+                                <form onsubmit="return false">
                                     <textarea name="name" rows="8" cols="10"
                                         placeholder="What's on your mind?"></textarea>
-                                    <button type="submit">POST</button>
+                                    <button сlass="postBtn" >POST</button>
                                     <div class="box__icons">
                                         <span>
                                             <i class="fa fa-video-camera"></i>Live</span>
@@ -266,6 +266,7 @@
 
         </main>
 
+        <script src="js/script.js"></script>
 </body>
 
 </html>

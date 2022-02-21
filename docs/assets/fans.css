@@ -40,6 +40,8 @@
 .posts__postContent {
   width: 100%;
   animation: slideFromBottom 1s ease-in;
+  word-wrap: break-word;
+  word-break: break-all;
 
 }
 

@@ -5,7 +5,7 @@ let storageElements = []
 
 
 const addNewPost = () => {
-    if (postTextarea.value === '') {
+    if (postTextarea.value.trim() === '') {
         alert('enter some text')
     }
     else {
@@ -33,5 +33,5 @@ if (storagePost) {
     let storagePostCopy = postsContent.cloneNode(true);
     storagePostCopy.innerHTML = JSON.parse(storagePost);
     postsBody.prepend(storagePostCopy)
-    //postsBody.innerHTML = //JSON.parse(localStorage.getItem('post'))
+
 }
